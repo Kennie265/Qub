@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Campaigns</h1>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar" id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Social Media Apps</a></li>
+                <li><a href="#">Parents Guide</a></li>
+                <li><a href="#">Livestreaming</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Legislation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Helping Teenagers Stay Safe Online</h2>
+            <p>We are on a mission to protect teenagers from the risks they face on social media. Our campaigns educate, empower, and inform both teenagers and their parents.</p>
+            <button class="btn-cta">Get Involved</button>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section">
+            <h3>Most Popular Social Media Apps</h3>
+            <img src="https://via.placeholder.com/600x400" alt="Social Media Apps" class="responsive-image">
+        </section>
+
+        <!-- Safety Tips Section -->
+        <section class="safety-tips">
+            <h3>How to Stay Safe Online</h3>
+            <div class="tips-grid">
+                <div class="tip-box">
+                    <h4>Tip #1: Strong Passwords</h4>
+                    <p>Always use strong, unique passwords for each of your accounts to prevent unauthorized access.</p>
+                </div>
+                <div class="tip-box">
+                    <h4>Tip #2: Privacy Settings</h4>
+                    <p>Check your privacy settings on social media platforms to control who can see your information.</p>
+                </div>
+                <div class="tip-box">
+                    <h4>Tip #3: Beware of Strangers</h4>
+                    <p>Never accept friend requests or messages from people you don’t know in real life.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Social Media Campaigns | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenu.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
