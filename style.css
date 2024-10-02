@@ -20,12 +20,12 @@ body {
     --white:#ffffff;
 }
 
-header {
+/* header {
     /* background-color: #4CAF50;
     color: white;
     padding: 1rem;
-    text-align: center; */
-}
+    text-align: center; 
+} */
 
 .nav-header{
     padding: 1rem;
